@@ -1,0 +1,36 @@
+version: '2'
+
+services:
+
+#  vtiger:
+#    image: javanile/vtiger
+#    environment:
+#      - MYSQL_ROOT_PASSWORD=root
+#      - VT_DB_HOST=mysql
+#      - VT_DB_PORT=3306
+#      - VT_DB_NAME=vtigercrm
+#      - VT_DB_USERNAME=vtigercrm
+#      - VT_DB_PASSWORD=vtigercrm
+#    volumes:
+#      - .:/var/www/html:rw
+#    ports:
+#      - "8383:80"
+#    links:
+#      - mysql
+#    restart: "no"
+
+  mysql:
+    image: mysql:5.5
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+    volumes:
+      - ./mysql:/var/lib/mysql:rw
+    restart: "no"
+
+  adminer:
+    image: adminer
+    ports:
+      - "8390:8080"
+    links:
+      - mysql
+    restart: "no"
