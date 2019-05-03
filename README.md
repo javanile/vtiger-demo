@@ -1,7 +1,7 @@
 # vtiger 😎 demo
 
 Unlock explosive growth with the easy to use and customizable CRM  
-for your marketing, sales, and customer service teams.
+for your marketing, sales, and customer service teams. Docker Power!
 
 ## Get Started
 
