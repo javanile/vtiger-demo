@@ -1,5 +1,8 @@
 # vtiger 😎 demo
 
+Unlock explosive growth with the easy to use and customizable CRM  
+for your marketing, sales, and customer service teams.
+
 ## Get Started
 
 1. Clone project with `git clone https://github.com/javanile/vtiger-demo.git`
@@ -8,7 +11,7 @@
 
 ## Use Docker Compose
 
-Create custom your vtiger environment follow this as example:
+Create your custom vtiger environment, follow this as example:
 
 ```yaml
 version: '3'
