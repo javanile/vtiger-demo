@@ -1,1 +1,1 @@
-# vtiger-studio
+# vtiger (demo)
