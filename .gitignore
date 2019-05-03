@@ -1,8 +1,4 @@
 .idea/
-mysql/
-vendor/
-node_modules/
-npm-debug.log
-.env.*.php
-.env.php
-.env
+volumes/
+!volumes/logs/.gitkeep
+!volumes/storage/.gitkeep
