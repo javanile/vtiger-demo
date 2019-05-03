@@ -1,12 +1,12 @@
-# vtiger (demo)
+# vtiger 😎 demo
 
-## Get started
+## Get Started
 
 1. Clone project with `git clone https://github.com/javanile/vtiger-demo.git`
 2. Launch command `docker-compose up -d` into `vtiger-demo` directory
-3. Visit `http://localhost:8080/` access using username `admin` and password `admin` 
+3. Visit `http://localhost:8080/` login with username `admin` and password `admin` 
 
-## Use `docker-compose.yml`
+## Use Docker Compose
 
 Create custom your vtiger environment follow this as example:
 
