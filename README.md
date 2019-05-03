@@ -44,3 +44,8 @@ services:
 volumes:
   mysql:
 ```
+
+## Contribute
+
+If you have custom scenario with vtige please place issues on the following page  
+https://github.com/javanile/vtiger-demo/issues
