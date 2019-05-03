@@ -47,6 +47,6 @@ volumes:
 
 ## Contribute
 
-If you have custom scenario with vtige please place issues on the following page
+If you have custom scenario with **vtiger** please place issues on the following page
 
 https://github.com/javanile/vtiger-demo/issues
