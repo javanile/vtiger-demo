@@ -5,6 +5,7 @@ services:
   vtiger:
     image: javanile/vtiger:7.1.0
     environment:
+      - VT_DEBUG=false
       - MYSQL_HOST=mysql
       - MYSQL_DATABASE=vtiger
       - MYSQL_ROOT_PASSWORD=secret
