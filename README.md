@@ -1,7 +1,7 @@
 # vtiger 😎 demo
 
 Unlock explosive growth with the easy to use and customizable CRM  
-for your marketing, sales, and customer service teams.
+for your marketing, sales, and customer service teams. Docker Power!
 
 ## Get Started
 
@@ -44,3 +44,9 @@ services:
 volumes:
   mysql:
 ```
+
+## Contribute
+
+If you have custom scenario with **vtiger** please place issues on the following page
+
+https://github.com/javanile/vtiger-demo/issues
