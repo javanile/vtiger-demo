@@ -2,19 +2,33 @@ version: '3'
 
 services:
 
+  nginx:
+    image: nginx:1.16.1-alpine
+    ports:
+      - 10080:80
+      - 10443:443
+    volumes:
+      - ./default.conf:/etc/nginx/conf.d/default.conf
+      - ./localhost.cert:/etc/ssl/localhost.cert
+      - ./localhost.key:/etc/ssl/localhost.key
+    links:
+      - vtiger
+
   vtiger:
     image: javanile/vtiger:7.1.0
     environment:
-      - VT_DEBUG=false
+      - VT_DEBUG=true
+      - VT_SITE_URL=https://localhost:10443/
       - MYSQL_HOST=mysql
       - MYSQL_DATABASE=vtiger
       - MYSQL_ROOT_PASSWORD=secret
     ports:
-      - "8080:80"
+      - 8080:80
     volumes:
       - ./:/app
-      - ./volumes/logs:/var/www/html/vtiger/logs
-      - ./volumes/storage:/var/www/html/vtiger/storage
+      - ./volumes/logs:/var/www/html/logs
+      - ./volumes/storage:/var/www/html/storage
+      - ./config_override.php:/var/www/html/config_override.php
     links:
       - mysql
 
