@@ -1,4 +1,4 @@
-# vtiger 😎 demo
+# 😎 vtiger demo
 
 Unlock explosive growth with the easy to use and customizable CRM  
 for your marketing, sales, and customer service teams. Docker Power!
@@ -28,8 +28,7 @@ services:
       - "8080:80"
     volumes:
       - ./:/app
-      - ./volumes/logs:/var/www/html/vtiger/logs
-      - ./volumes/storage:/var/www/html/vtiger/storage
+      - vtiger:/var/lib/vtiger
     links:
       - mysql
 
@@ -43,6 +42,7 @@ services:
 
 volumes:
   mysql:
+  vtiger:
 ```
 
 ## Contribute
