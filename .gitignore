@@ -1,4 +1,4 @@
 .idea/
-volumes/
-!volumes/logs/.gitkeep
-!volumes/storage/.gitkeep
+.vscode/
+volume/
+!volumes/.gitkeep

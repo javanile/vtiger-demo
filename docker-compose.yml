@@ -26,8 +26,7 @@ services:
       - 8080:80
     volumes:
       - ./:/app
-      - ./volumes/logs:/var/www/html/logs
-      - ./volumes/storage:/var/www/html/storage
+      - ./volume:/var/lib/vtiger
       - ./config_override.php:/var/www/html/config_override.php
     links:
       - mysql
@@ -47,15 +46,6 @@ services:
       - MYSQL_ROOT_PASSWORD=secret
     ports:
       - "8081:8080"
-
-  phpmyadmin:
-    image: phpmyadmin/phpmyadmin
-    environment:
-      - PMA_HOST=mysql
-      - MYSQL_DATABASE=vtiger
-      - MYSQL_ROOT_PASSWORD=secret
-    ports:
-      - "8082:80"
 
 volumes:
   mysql:
