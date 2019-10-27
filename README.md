@@ -26,7 +26,7 @@ services:
       - MYSQL_DATABASE=vtiger
       - MYSQL_ROOT_PASSWORD=secret
     ports:
-      - "8080:80"
+      - 8080:80
     volumes:
       - ./:/app
       - vtiger:/var/lib/vtiger
