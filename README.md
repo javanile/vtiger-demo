@@ -21,6 +21,7 @@ services:
   vtiger:
     image: javanile/vtiger:7.1.0
     environment:
+      - VT_SITE_URL=http://localhost:8080
       - MYSQL_HOST=mysql
       - MYSQL_DATABASE=vtiger
       - MYSQL_ROOT_PASSWORD=secret
